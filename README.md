@@ -43,7 +43,7 @@ services:
 ```
 
 # 测试
-使用浏览器打开地址http://host:port测试验证。作者提供了一个测试环境，点[这里](http://shortl.cc)。
+使用浏览器打开地址http://host:port 测试验证。作者提供了一个测试环境，点[这里](http://shortl.cc)。
 
 # API接口
 服务还提供了API接口供应用调用
@@ -59,7 +59,7 @@ curl -d "url=http://www.baidu.com&duration=86400&password=shortlcc" http://short
 {"orignal":"http://www.baidu.com","key":"gBr750Kig","domain":"shortl.cc","port":"80"}
 ```
 
-* 如果没有传password值，短链结果为http://${domain}:${post}/${key}，否则短链为http://${domain}:${post}/${key}?pwd=${password}，示例中的短链为http://shortl.cc/gBr750Kig?pwd=shortlcc，有效期为1天。
+* 如果没有传password值，短链结果为http://${domain}:${post}/${key}，否则短链为http://${domain}:${post}/${key}?pwd=${password}，示例中的短链为http://shortl.cc/gBr750Kig?pwd=shortlcc ，有效期为1天。
 
 # 引用源码
 * LRUCache [xcltapestry/xclpkg](github.com/xcltapestry/xclpkg/)
