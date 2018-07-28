@@ -1,0 +1,9 @@
+version: '1'
+services:
+  shortlink:
+    domain: 'localhost'
+    port: '8080'
+    lru_cache_size: 1000000
+
+    #user:password@tcp(dbhost:dbport)/dbname?charset=utf8
+    db: 'root:123456@tcp(localhost:3306)/shortlink'
