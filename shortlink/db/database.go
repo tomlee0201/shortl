@@ -58,7 +58,7 @@ func Query(key string) (*Entry, error) {
 	lock.Lock()
 	defer lock.Unlock()
 
-	exp1 := regexp.MustCompile("[a-zA-Z0-9\\-]+")
+	exp1 := regexp.MustCompile("[a-zA-Z0-9\\-_]+")
 
 	marched := exp1.FindAllString(key, -1)
 	if  marched == nil || marched[0] != key {
