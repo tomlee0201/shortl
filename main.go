@@ -14,7 +14,7 @@
 
 package main
 
-import "shortl/cmd"
+import "github.com/tomlee0201/shortl/cmd"
 
 func main() {
 	cmd.Execute()

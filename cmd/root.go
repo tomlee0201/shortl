@@ -17,7 +17,8 @@ package cmd
 import (
 	"fmt"
 	"os"
-	"shortl/shortlink"
+
+	"github.com/tomlee0201/shortl/shortlink"
 
 	"log"
 
