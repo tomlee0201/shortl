@@ -1,4 +1,4 @@
-简单的短链程序，可以在[http://shortl.cc](http://shortl.cc)体验。
+简洁的短链程序，可以在[http://shortl.cc](http://shortl.cc)体验。
 
 # Table of Contents
 
@@ -35,7 +35,8 @@ services:
     domain: 'localhost'
     #短链服务的端口
     port: '8080'
-    #短链对应缓存大小，假设每条记录是1K，一百万条需要1G内存，请按照服务器的可用内存设置该大小
+    #短链使用的LRU缓存大小，假设每条记录是1K，缓存一百万条需要1G内存，不要超过服务器的可用内存的80%。
+    #不需要全部放入到内存缓存中，LRU淘汰的条目如果再访问会从数据库中加载。
     lru_cache_size: 100000
 
     #user:password@tcp(dbhost:dbport)/dbname?charset=utf8
