@@ -65,6 +65,7 @@ func Query(key string) (*Entry, error) {
 		return nil, &Error{S: "Invalide key " + key}
 	}
 	v, succ, _ := cache.Get(key)
+
 	if succ {
 		value, ok := v.(Entry)
 		if ok {

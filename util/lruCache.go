@@ -68,7 +68,7 @@ func (lru *LRUCache)Set(k,v interface{})(error){
 func (lru *LRUCache)Get(k interface{})(v interface{},ret bool,err error){
 
 	if lru.cacheMap == nil {
-		return v,false,errors.New("LRUCache结构体未初始化.")
+		return v,false, errors.New("LRUCache结构体未初始化.")
 	}
 
 	if pElement,ok := lru.cacheMap[k]; ok {
