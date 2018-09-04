@@ -95,6 +95,10 @@ func createShortLink(url string, duration int64, password string) CreateResult {
 func createApiHandler(w http.ResponseWriter, r *http.Request) {
 	if r.Method == "POST" {
 		url := r.PostFormValue("url")
+		if !strings.Contains(url, ":") {
+			url = "http://" + url
+		}
+
 		sduration := r.PostFormValue("duration")
 		password := r.PostFormValue("password")
 

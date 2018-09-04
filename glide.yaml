@@ -1,0 +1,11 @@
+package: github.com/tomlee0201/shortl
+import:
+- package: github.com/go-sql-driver/mysql
+- package: github.com/pkg/errors
+- package: github.com/spf13/cobra
+  version: ~0.0.3
+- package: github.com/spf13/viper
+  version: ~1.1.0
+- package: golang.org/x/crypto
+  subpackages:
+  - pbkdf2
